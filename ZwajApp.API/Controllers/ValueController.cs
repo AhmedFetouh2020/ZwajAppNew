@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ZwajApp.API.Data;
@@ -9,6 +10,7 @@ namespace ZwajApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ValueController : ControllerBase
     {
         private readonly DataContext _context;
@@ -29,6 +31,7 @@ namespace ZwajApp.API.Controllers
 
         // Get api/value/5
         [HttpGet("{id}")]
+        [AllowAnonymous]
          public async Task<IActionResult> GetValue(int id)
         {
             var item = await _context.Values.FirstOrDefaultAsync(x=>x.ID==id);
