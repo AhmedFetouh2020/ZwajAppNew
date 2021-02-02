@@ -20,7 +20,7 @@ namespace ZwajApp.API.Controllers
             _context = context;
 
         }
-
+            [AllowAnonymous]
         // Get api/value
         [HttpGet]
         public async Task<IActionResult> GetValues()

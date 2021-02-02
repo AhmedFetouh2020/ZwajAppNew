@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap-v4-rtl/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
+
+@font-face{font-family: "JF Flat";src: url(./assets/Fonts/JF-Flat-Regular.ttf);}
+@font-face{font-family: "Droid-Sans-Arabic";src: url(./assets/Fonts/Droid-Sans-Arabic.ttf);}
+@font-face{font-family: "Droid-Arabic-Kufi";src: url(./assets/Fonts/Droid-Arabic-Kufi.ttf);}
+@font-face{font-family: "Droid-Arabic-Kufi-1";src: url(./assets/Fonts/Droid-Arabic-Kufi-1.ttf);}
+@font-face{font-family: "18410-ah-naskh-hadith";src: url(./assets/Fonts/18410-ah-naskh-hadith.ttf);} 
+@font-face{font-family: "ToyorAljanah";src: url(./assets/Fonts/ToyorAljanah-Regular.otf);} 
