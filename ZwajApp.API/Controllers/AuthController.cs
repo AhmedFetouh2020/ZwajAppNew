@@ -53,7 +53,7 @@ namespace ZwajApp.API.Controllers
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
         {
            
-                // throw new Exception("Api Says Noo");
+               
                 var userFromRepo = await _repo.Login(userForLoginDto.Username.ToLower(), userForLoginDto.Password.ToLower());
 
                 if (userFromRepo == null) return Unauthorized();
